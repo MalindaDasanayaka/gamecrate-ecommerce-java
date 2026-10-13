@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            <img src="assets/images/logo.png" alt="GameCrate Logo" class="logo-img">
+            <span class="brand-text">
+                <span class="game">GAME</span><span class="crate">CRATE</span><span class="lk">.LK</span>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Consoles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search.html">Games</a>
+                </li>
+            </ul>
+
+            <!-- Search Bar -->
+            <div class="d-flex mx-3" role="search">
+                <input class="form-control me-2 bg-dark text-light border-0" 
+                       id="searchInput"
+                       type="search"
+                       placeholder="Search..."
+                       aria-label="Search">
+                <button class="btn btn-primary" onclick="searchProducts()">Search</button>
+            </div>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="my-account.html">My Account</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="sign-in.html">Login</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="sign-up.html">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content text-light" style="background-color: var(--secondary-bg);">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search Results</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="searchResults">
+                <div class="row" id="search-container">
+                    <div class="col-lg-6">
+                        <div class="product-card">
+                            <a href="#">
+                                <img src="https://via.placeholder.com/400x300.png/232946/FFFFFF?text=PS5+Console"
+                                     class="card-img-top" alt="PS5 Console"> 
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">PlayStation 5 Console</h5>
+                                <p class="card-text">Rs.<span>59.99</span></p>
+                                <a href="#" class="btn btn-secondary w-100 mb-2" id="st-product-a-2"><i class="fas fa-eye me-2"></i> View Details</a>
+                                <a href="#" class="btn btn-primary w-100" id="st-product-add-to-cart"><i class="fas fa-cart-plus me-2"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

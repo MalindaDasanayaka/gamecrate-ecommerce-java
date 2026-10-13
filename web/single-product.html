@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product | GameCrate.lk</title>
+        <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/notification.css">
+    </head>
+
+    <body onload="loadHeaderFooter();loadData();">
+
+        <div id="header"></div>
+
+        <div class="container" style="padding-top: 120px;">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-gallery">
+                        <img id="main-product-image"
+                             src=""
+                             alt="Main Product Image" class="img-fluid mb-3">
+
+                        <div class="d-flex">
+                            <img src=""
+                                 alt="Thumbnail 1" class="img-thumbnail active" id="thumb-image1">
+                            <img src=""
+                                 alt="Thumbnail 2" class="img-thumbnail" id="thumb-image2">
+                            <img src=""
+                                 alt="Thumbnail 3" class="img-thumbnail" id="thumb-image3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold mb-4" id="title">PlayStation 5 Console</h1>
+                    <p class="mb-3 fs-5">Published On <span id="date">September 2, 2024</span></p>
+                    <p class="fs-3 accent-text fw-bold mb-4">Rs.<span id="price">499.99</span></p>
+
+                    <ul class="lead list-unstyled mb-5">
+                        <li><i class="fa fa-play accent-text-secondary"></i><span class="accent-text-secondary"> Category: </span><span id="category">Category Name Here</span></li>
+                        <li><i class="fa fa-play accent-text-secondary"></i><span class="accent-text-secondary"> Platform: </span><span id="platform">Platform Name Here</span></li>
+                        <li><i class="fa fa-play accent-text-secondary"></i><span class="accent-text-secondary"> Genre: </span><span id="genre">Genre Name Here</span></li>
+                        <li><i class="fa fa-play accent-text-secondary"></i><span class="accent-text-secondary"> In stock: </span><span id="stock">5</span> Units</li>
+                    </ul>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <label for="cart-qty" class="form-label me-3 mb-0">Quantity:</label>
+                        <div class="input-group qty-group">
+                            <button class="btn btn-outline-secondary btn-minus" type="button">-</button>
+                            <input type="text" id="cart-qty" class="form-control quantity-input" value="1" min="1">
+                            <button class="btn btn-outline-secondary btn-plus" type="button">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-lg w-100" id="cart-main"><i class="fas fa-cart-plus me-2"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fs-5 fw-bold" id="description-tab" data-bs-toggle="tab"
+                                        data-bs-target="#description" type="button" role="tab">Description</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-4" id="productTabContent" style="background-color: var(--secondary-bg);">
+                        <div class="tab-pane fade show active" role="tabpanel">
+                            <p class="fs-5" id="description">Full detailed product description goes here. Talk about the features, the experience, and
+                                what makes this product unique. Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container my-5">
+                <h2 class="mb-4">Similar Products</h2>
+                <div class="row" id="similer-product-main">
+                    <div class="col-md-6 col-lg-3" id="similer-product">
+                        <div class="product-card">
+                            <a href="#" id="similer-product-a1">
+                                <img src=""
+                                     class="card-img-top" alt="PS5 Console" id="similer-product-image">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title" id="similer-product-title">PlayStation 5 Console</h5>
+                                <p class="card-text">Rs.<span id="similer-product-price">499.99</span></p>
+                                <a href="#" class="btn btn-outline-dark w-100 mb-2" id="similer-product-a2"><i class="fas fa-eye me-2"></i> View Details</a>
+                                <a href="#" class="btn btn-primary w-100" id="similer-product-add-to-cart"><i class="fas fa-cart-plus me-2"></i> Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/notification.js"></script>
+        <script src="assets/js/single-product.js"></script>
+        
+        <button class="scroll-to-top" id="scrollToTop" title="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </body>
+
+</html>
