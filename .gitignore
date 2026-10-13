@@ -1,0 +1,24 @@
+# NetBeans IDE User-specific configuration
+nbproject/private/
+
+# Build & Compilation Artifacts
+build/
+dist/
+target/
+*.class
+*.war
+*.ear
+*.jar
+
+# Logs and runtime artifacts
+*.log
+*.tmp
+
+# System and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and sensitive files
+.env
+.env.local
